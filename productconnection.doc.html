@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>CustomerEdge</title>
+    <title>ProductConnection</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -135,7 +135,7 @@
                 CustomerConnection
             </a>
         </li>
-        <li class="slds-is-active" title="CustomerEdge">
+        <li  title="CustomerEdge">
             <a href="customeredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CustomerEdge
             </a>
@@ -375,7 +375,7 @@
                 ProductBreakdownItem
             </a>
         </li>
-        <li  title="ProductConnection">
+        <li class="slds-is-active" title="ProductConnection">
             <a href="productconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ProductConnection
             </a>
@@ -641,7 +641,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">CustomerEdge</h1>
+        <h1 class="slds-text-heading--large">ProductConnection</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -653,7 +653,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">CustomerEdge</span> {</li><li></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="customer.doc.html">Customer</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ProductConnection</span> {</li><li></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="productedge.doc.html">ProductEdge</a>] </span></li><li></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -664,7 +664,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="customerconnection.doc.html" title="CustomerConnection - ">CustomerConnection<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="rootquerytype.doc.html" title="RootQueryType - ">RootQueryType<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
