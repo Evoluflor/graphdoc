@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>InsertFiscalPrintInput</title>
+    <title>ProductWithoutVirtual</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -390,7 +390,7 @@
                 ProductPayload
             </a>
         </li>
-        <li  title="ProductWithoutVirtual">
+        <li class="slds-is-active" title="ProductWithoutVirtual">
             <a href="productwithoutvirtual.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ProductWithoutVirtual
             </a>
@@ -515,7 +515,7 @@
                 InsertFiscalPaymentInput
             </a>
         </li>
-        <li class="slds-is-active" title="InsertFiscalPrintInput">
+        <li  title="InsertFiscalPrintInput">
             <a href="insertfiscalprintinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InsertFiscalPrintInput
             </a>
@@ -645,9 +645,10 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
-        <h1 class="slds-text-heading--large">InsertFiscalPrintInput</h1>
-        <div class="slds-text-body--regular"></div>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ProductWithoutVirtual</h1>
+        <div class="slds-text-body--regular"><p>Product without virtual fields</p>
+</div>
     </div>
 </section>
 <section>
@@ -658,7 +659,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">InsertFiscalPrintInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">count</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">hash</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">nextId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">printDate</span>: <a class="support type" href="datetime.doc.html">DateTime</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">terminalId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">transactionId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ProductWithoutVirtual</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Product is active or not</span></span></li><li><span class="tab"><span class="meta">active</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product is archived or not</span></span></li><li><span class="tab"><span class="meta">archived</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique product barcode</span></span></li><li><span class="tab"><span class="meta">barcode</span>: <a class="support type" href="string.doc.html">String</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Not used in app" </span> )</span></li><li></li><li><span class="tab"><span class="meta">categories</span>: [<a class="support type" href="category.doc.html">Category</a>] </span></li><li></li><li><span class="tab"><span class="meta">category</span>: <a class="support type" href="category.doc.html">Category</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product is deleted or not</span></span></li><li><span class="tab"><span class="meta">deleted</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product description</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product is visible in eshop or not</span></span></li><li><span class="tab"><span class="meta">eshopDisplay</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique product id</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="file.doc.html">File</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product name</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Product price is open or not</span></span></li><li><span class="tab"><span class="meta">openPrice</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product is perishable or not</span></span></li><li><span class="tab"><span class="meta">perishable</span>: <a class="support type" href="boolean.doc.html">Boolean</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Not used in app" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Product price</span></span></li><li><span class="tab"><span class="meta">price</span>: <a class="support type" href="decimal.doc.html">Decimal</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product price including tax</span></span></li><li><span class="tab"><span class="meta">priceInclTax</span>: <a class="support type" href="decimal.doc.html">Decimal</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product is taxable or not</span></span></li><li><span class="tab"><span class="meta">taxable</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Product vat</span></span></li><li><span class="tab"><span class="meta">vat</span>: <a class="support type" href="decimal.doc.html">Decimal</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -669,7 +670,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="rootmutationtype.doc.html" title="RootMutationType - ">RootMutationType<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="productpayload.doc.html" title="ProductPayload - ">ProductPayload<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
