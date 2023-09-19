@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>InsertOrderInput</title>
+    <title>UpdateFileInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -555,7 +555,7 @@
                 InsertOrderDeliveryAddress
             </a>
         </li>
-        <li class="slds-is-active" title="InsertOrderInput">
+        <li  title="InsertOrderInput">
             <a href="insertorderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InsertOrderInput
             </a>
@@ -590,7 +590,7 @@
                 UpdateEmployeeInput
             </a>
         </li>
-        <li  title="UpdateFileInput">
+        <li class="slds-is-active" title="UpdateFileInput">
             <a href="updatefileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UpdateFileInput
             </a>
@@ -656,7 +656,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
-        <h1 class="slds-text-heading--large">InsertOrderInput</h1>
+        <h1 class="slds-text-heading--large">UpdateFileInput</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -668,7 +668,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">InsertOrderInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">additionalDetails</span>: <a class="support type" href="insertorderadditionaldetails.doc.html">InsertOrderAdditionalDetails</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">customerId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">deliveryAddress</span>: <a class="support type" href="insertorderdeliveryaddress.doc.html">InsertOrderDeliveryAddress</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">deliveryDateFrom</span>: <a class="support type" href="datetime.doc.html">DateTime</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">deliveryDateTo</span>: <a class="support type" href="datetime.doc.html">DateTime</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">hasProblem</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">invoiceId</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">isDeliveryOrPickupValidated</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">orderTransactionStatus</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">orderType</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">refundedComment</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">refundedOrderId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">reversedInvoiceId</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">transactionId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">UpdateFileInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">contentType</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">url</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
