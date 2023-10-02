@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ID</title>
+    <title>UpdateCashFundLineInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -60,7 +60,7 @@
                 Decimal
             </a>
         </li>
-        <li class="slds-is-active" title="ID">
+        <li  title="ID">
             <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ID
             </a>
@@ -575,7 +575,7 @@
                 InsertWeddingDetailsInput
             </a>
         </li>
-        <li  title="UpdateCashFundLineInput">
+        <li class="slds-is-active" title="UpdateCashFundLineInput">
             <a href="updatecashfundlineinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UpdateCashFundLineInput
             </a>
@@ -660,14 +660,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">ID</h1>
-        <div class="slds-text-body--regular"><p>The <code>ID</code> scalar type represents a unique identifier, often used to
-refetch an object or as key for a cache. The ID type appears in a JSON
-response as a String; however, it is not intended to be human-readable.
-When expected as an input type, any string (such as <code>&quot;4&quot;</code>) or integer
-(such as <code>4</code>) input value will be accepted as an ID.</p>
-</div>
+        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
+        <h1 class="slds-text-heading--large">UpdateCashFundLineInput</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -678,7 +673,7 @@ When expected as an input type, any string (such as <code>&quot;4&quot;</code>) 
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">ID</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">UpdateCashFundLineInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">amount</span>: <a class="support type" href="decimal.doc.html">Decimal</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">direction</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">employeeId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">isError</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">lineDate</span>: <a class="support type" href="datetime.doc.html">DateTime</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">operation</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">paymentMethod</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">pointOfSaleId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">terminalId</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">total</span>: <a class="support type" href="decimal.doc.html">Decimal</a></span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -689,7 +684,7 @@ When expected as an input type, any string (such as <code>&quot;4&quot;</code>) 
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="cashfundline.doc.html" title="CashFundLine - ">CashFundLine<em>null</em></a><li><li><a href="category.doc.html" title="Category - This is a product category">Category<em>This is a product category</em></a><li><li><a href="customer.doc.html" title="Customer - ">Customer<em>null</em></a><li><li><a href="employee.doc.html" title="Employee - ">Employee<em>null</em></a><li><li><a href="file.doc.html" title="File - This is a file">File<em>This is a file</em></a><li><li><a href="fiscalarticle.doc.html" title="FiscalArticle - ">FiscalArticle<em>null</em></a><li><li><a href="fiscalarticlescorrection.doc.html" title="FiscalArticlesCorrection - ">FiscalArticlesCorrection<em>null</em></a><li><li><a href="fiscalclosing.doc.html" title="FiscalClosing - ">FiscalClosing<em>null</em></a><li><li><a href="fiscalclosingwithtransactions.doc.html" title="FiscalClosingWithTransactions - ">FiscalClosingWithTransactions<em>null</em></a><li><li><a href="fiscalpayment.doc.html" title="FiscalPayment - ">FiscalPayment<em>null</em></a><li><li><a href="fiscalpaymentscorrection.doc.html" title="FiscalPaymentsCorrection - ">FiscalPaymentsCorrection<em>null</em></a><li><li><a href="fiscalprint.doc.html" title="FiscalPrint - ">FiscalPrint<em>null</em></a><li><li><a href="fiscaltransaction.doc.html" title="FiscalTransaction - ">FiscalTransaction<em>null</em></a><li><li><a href="fiscaltransactionscorrection.doc.html" title="FiscalTransactionsCorrection - ">FiscalTransactionsCorrection<em>null</em></a><li><li><a href="frozencustomerinput.doc.html" title="FrozenCustomerInput - ">FrozenCustomerInput<em>null</em></a><li><li><a href="insertcategoryinput.doc.html" title="InsertCategoryInput - ">InsertCategoryInput<em>null</em></a><li><li><a href="insertfiscalarticlecorrectioninput.doc.html" title="InsertFiscalArticleCorrectionInput - ">InsertFiscalArticleCorrectionInput<em>null</em></a><li><li><a href="insertfiscalarticleinput.doc.html" title="InsertFiscalArticleInput - ">InsertFiscalArticleInput<em>null</em></a><li><li><a href="insertfiscalpaymentcorrectioninput.doc.html" title="InsertFiscalPaymentCorrectionInput - ">InsertFiscalPaymentCorrectionInput<em>null</em></a><li><li><a href="insertfiscalpaymentinput.doc.html" title="InsertFiscalPaymentInput - ">InsertFiscalPaymentInput<em>null</em></a><li><li><a href="insertfiscalprintinput.doc.html" title="InsertFiscalPrintInput - ">InsertFiscalPrintInput<em>null</em></a><li><li><a href="insertfiscaltransactioncorrectioninput.doc.html" title="InsertFiscalTransactionCorrectionInput - ">InsertFiscalTransactionCorrectionInput<em>null</em></a><li><li><a href="insertfiscaltransactioninput.doc.html" title="InsertFiscalTransactionInput - ">InsertFiscalTransactionInput<em>null</em></a><li><li><a href="insertorderinput.doc.html" title="InsertOrderInput - ">InsertOrderInput<em>null</em></a><li><li><a href="insertordertrackinglineinput.doc.html" title="InsertOrderTrackingLineInput - ">InsertOrderTrackingLineInput<em>null</em></a><li><li><a href="insertpointofsaleinput.doc.html" title="InsertPointOfSaleInput - ">InsertPointOfSaleInput<em>null</em></a><li><li><a href="invoice.doc.html" title="Invoice - ">Invoice<em>null</em></a><li><li><a href="loyaltyline.doc.html" title="LoyaltyLine - ">LoyaltyLine<em>null</em></a><li><li><a href="order.doc.html" title="Order - ">Order<em>null</em></a><li><li><a href="ordertrackingline.doc.html" title="OrderTrackingLine - ">OrderTrackingLine<em>null</em></a><li><li><a href="pointofsale.doc.html" title="PointOfSale - ">PointOfSale<em>null</em></a><li><li><a href="product.doc.html" title="Product - This is a product">Product<em>This is a product</em></a><li><li><a href="productwithoutvirtual.doc.html" title="ProductWithoutVirtual - Product without virtual fields">ProductWithoutVirtual<em>Product without virtual fields</em></a><li><li><a href="rootmutationtype.doc.html" title="RootMutationType - ">RootMutationType<em>null</em></a><li><li><a href="rootquerytype.doc.html" title="RootQueryType - ">RootQueryType<em>null</em></a><li><li><a href="team.doc.html" title="Team - ">Team<em>null</em></a><li><li><a href="terminalinfo.doc.html" title="TerminalInfo - ">TerminalInfo<em>null</em></a><li><li><a href="updatecashfundlineinput.doc.html" title="UpdateCashFundLineInput - ">UpdateCashFundLineInput<em>null</em></a><li><li><a href="updatecustomerinput.doc.html" title="UpdateCustomerInput - ">UpdateCustomerInput<em>null</em></a><li><li><a href="updateemployeeinput.doc.html" title="UpdateEmployeeInput - ">UpdateEmployeeInput<em>null</em></a><li><li><a href="updateinvoiceinput.doc.html" title="UpdateInvoiceInput - ">UpdateInvoiceInput<em>null</em></a><li><li><a href="updateorderinput.doc.html" title="UpdateOrderInput - ">UpdateOrderInput<em>null</em></a><li><li><a href="updateordertrackinglineinput.doc.html" title="UpdateOrderTrackingLineInput - ">UpdateOrderTrackingLineInput<em>null</em></a><li><li><a href="updatepointofsaleinput.doc.html" title="UpdatePointOfSaleInput - ">UpdatePointOfSaleInput<em>null</em></a><li><li><a href="updateproductinput.doc.html" title="UpdateProductInput - ">UpdateProductInput<em>null</em></a><li><li><a href="updateterminalinfoinput.doc.html" title="UpdateTerminalInfoInput - ">UpdateTerminalInfoInput<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="rootmutationtype.doc.html" title="RootMutationType - ">RootMutationType<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
