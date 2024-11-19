@@ -105,6 +105,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
+        <li  title="AuditLog">
+            <a href="auditlog.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuditLog
+            </a>
+        </li>
         <li  title="CashFundLine">
             <a href="cashfundline.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CashFundLine
@@ -405,6 +410,16 @@
                 Quote
             </a>
         </li>
+        <li  title="QuoteConnection">
+            <a href="quoteconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuoteConnection
+            </a>
+        </li>
+        <li  title="QuoteEdge">
+            <a href="quoteedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuoteEdge
+            </a>
+        </li>
         <li  title="QuotePayload">
             <a href="quotepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 QuotePayload
@@ -688,7 +703,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Quote</span> {</li><li></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">frozenCustomer</span>: <a class="support type" href="customer.doc.html">Customer</a>! </span></li><li></li><li><span class="tab"><span class="meta">orderId</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">quoteNumber</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">replacedQuoteId</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Quote</span> {</li><li></li><li><span class="tab"><span class="meta">auditLogs</span>: [<a class="support type" href="auditlog.doc.html">AuditLog</a>] </span></li><li></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">emailStatus</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">frozenCustomer</span>: <a class="support type" href="customer.doc.html">Customer</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">orderId</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">quoteNumber</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">refusedAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">refusedComment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">replacedQuoteId</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">signatureAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -699,7 +714,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="quotepayload.doc.html" title="QuotePayload - ">QuotePayload<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="quoteedge.doc.html" title="QuoteEdge - ">QuoteEdge<em>null</em></a><li><li><a href="quotepayload.doc.html" title="QuotePayload - ">QuotePayload<em>null</em></a><li><li><a href="rootquerytype.doc.html" title="RootQueryType - ">RootQueryType<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
