@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>OrderAdditionalDetailsWedding</title>
+    <title>EmailTracking</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -155,7 +155,7 @@
                 Discount
             </a>
         </li>
-        <li  title="EmailTracking">
+        <li class="slds-is-active" title="EmailTracking">
             <a href="emailtracking.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 EmailTracking
             </a>
@@ -325,7 +325,7 @@
                 OrderAdditionalDetailsMourning
             </a>
         </li>
-        <li class="slds-is-active" title="OrderAdditionalDetailsWedding">
+        <li  title="OrderAdditionalDetailsWedding">
             <a href="orderadditionaldetailswedding.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrderAdditionalDetailsWedding
             </a>
@@ -701,7 +701,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">OrderAdditionalDetailsWedding</h1>
+        <h1 class="slds-text-heading--large">EmailTracking</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -713,7 +713,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">OrderAdditionalDetailsWedding</span> {</li><li></li><li><span class="tab"><span class="meta">brideFirstName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">brideLastName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">ceremonyAddress</span>: <a class="support type" href="orderdeliveryaddress.doc.html">OrderDeliveryAddress</a> </span></li><li></li><li><span class="tab"><span class="meta">ceremonyDeliveryDateFrom</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">ceremonyDeliveryDateTo</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">detailsType</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">eventDetail</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">groomFirstName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">groomLastName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">receptionAddress</span>: <a class="support type" href="orderdeliveryaddress.doc.html">OrderDeliveryAddress</a> </span></li><li></li><li><span class="tab"><span class="meta">receptionDeliveryDateFrom</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">receptionDeliveryDateTo</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">townHallAddress</span>: <a class="support type" href="orderdeliveryaddress.doc.html">OrderDeliveryAddress</a> </span></li><li></li><li><span class="tab"><span class="meta">townHallDeliveryDateFrom</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">townHallDeliveryDateTo</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">EmailTracking</span> {</li><li></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">insertedAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -724,7 +724,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="orderdetails.doc.html" title="OrderDetails - Polymorphic order detail">OrderDetails<em>Polymorphic order detail</em></a><li></ul>
+        <ul class="require-by"><li><a href="quote.doc.html" title="Quote - ">Quote<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
